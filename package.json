@@ -4,7 +4,7 @@
   "description": "Plugs 6to5 into Rupert",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/.bin/mocha --require should --compilers coffee:coffee-script/register"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,16 @@
   "bugs": {
     "url": "https://github.com/joesepi/rupert-plugin-6to5/issues"
   },
-  "homepage": "https://github.com/joesepi/rupert-plugin-6to5"
+  "homepage": "https://github.com/joesepi/rupert-plugin-6to5",
+  "dependencies": {
+    "6to5": "^3.3.11"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.0",
+    "grunt": "^0.4.5",
+    "mocha": "^2.1.0",
+    "rupert": "^0.3.2",
+    "should": "^4.6.5",
+    "supertest": "^0.15.0"
+  }
 }
